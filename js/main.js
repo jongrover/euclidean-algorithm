@@ -37,10 +37,10 @@ $(function() {
     $('td').css({'height':($('td').width())+'px'});
   }
 
-  function calc(s1,s2){
+  function calc(s1, s2) {
     var big = biggest(s1, s2), 
         sm = smallest(s1, s2),
-        rem = remainder(big,sm);
+        rem = remainder(big, sm);
     if (rem === 0) {
       var tileSize = sm,
           tilesHigh = smallSide / tileSize,
@@ -48,17 +48,17 @@ $(function() {
           tileNum = tilesHigh * tilesWide;
       result(tileSize, tilesHigh, tilesWide, tileNum);
     } else {
-      calc(sm,rem);
+      calc(sm, rem);
     }
   }
 
-  $('form').submit(function(event){
+  $('form').submit(function(event) {
     var w = parseInt($('#width').val()),
         h = parseInt($('#height').val());
     largeSide = biggest(w, h);
     smallSide = smallest(w, h);
-    calc(w,h);
+    calc(w, h);
     event.preventDefault();
   });
-  
+
 });
