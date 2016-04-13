@@ -4,6 +4,6 @@ In mathematics, the Euclidean algorithm, or Euclid's algorithm, is an efficient 
 
 This app takes two numbers for the size of a given space and will tell you how many tiles of the largest size will fit within the space.
 
-This is my first attempt at solving this using procedural JavaScript. It is working nicely, but there is room to be refactored further or changed to OO.
+This is my first attempt at solving this using procedural JavaScript. It is working nicely!
 
 [Read More About Euclidean Algorithm Here](https://en.wikipedia.org/wiki/Euclidean_algorithm)
