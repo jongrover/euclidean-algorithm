@@ -28,9 +28,9 @@ $(function() {
       }
     }
     var result = '<p>tile size: '+tileSize+' x '+tileSize+', '+
-                 'number of tiles: '+tileNum+', '+
                  'rows: '+tilesHigh+', '+
-                 'cols: '+tilesWide+'</p>';
+                 'cols: '+tilesWide+', '+
+                 'total tiles: '+tileNum+'</p>';
 
     $('#result').empty().html(result).append($table);
     $('td').css({'width':(100 / tilesWide)+'%'});
