@@ -3,21 +3,23 @@ $(function() {
   var largeSide, smallSide;
 
   function biggest(s1, s2) {
-    if (s1 > s2) {
-      return s1;
-    }
-    else {
-      return s2;
-    }
+    // if (s1 > s2) {
+    //   return s1;
+    // }
+    // else {
+    //   return s2;
+    // }
+    return s1 > s2 ? s1 : s2;
   }
 
   function smallest(s1, s2) {
-    if (s1 < s2) {
-      return s1;
-    }
-    else {
-      return s2;
-    }
+    // if (s1 < s2) {
+    //   return s1;
+    // }
+    // else {
+    //   return s2;
+    // }
+    return s1 < s2 ? s1 : s2;
   }
 
   function remainder(big, sm) {
